@@ -21,7 +21,6 @@ module.exports = {
 	//TODO: bring in repeated results from API call and create upper and lower bolinger bands
 	// for the data and store it along with the initial values in a database for use later.
 	rateGrabber: function(){
-		console.log("TESTING MODULE USE HERE");
 		console.log(this.dataSet);
 		request('https://blockchain.info/ticker', this.rateCallback.bind(this));
 	},//end testFunction
